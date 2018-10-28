@@ -20,9 +20,6 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
-Route::get('/', function () {
-    return view('pages.thankyou');
-});
 Route::post('/contact', function () {
 
     $data = request() ->all();
@@ -30,4 +27,6 @@ Route::post('/contact', function () {
     echo "Email:" . $data['email'] . '<br>';
     echo "Body:" . $data['body'];
 });
+Route::get('/thankyou', function () {
+    return view('pages.thankyou');
 });

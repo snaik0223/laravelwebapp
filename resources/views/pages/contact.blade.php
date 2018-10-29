@@ -4,7 +4,7 @@
 
     <div class="card mt-3 pl-2 pr-2">
         <div class="card-title"><h1>This is my contact page</h1>
-            <p class="lead">Please use this form to contact site owner.</p></div>
+            <p class="lead">Please use this form to contact the site owner for any questions/concerns.</p></div>
 
 
         <div class="card-body"></div>

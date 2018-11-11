@@ -24,10 +24,4 @@ Route::get('/thankyou', function () {
     return view('pages.thankyou');
 })->name('thankyou');
 
-Route::post('/contact', function () {
 
-    $data = request() ->all();
-
-    echo "Email:" . $data['email'] . '<br>';
-    echo "Body:" . $data['body'];
-});

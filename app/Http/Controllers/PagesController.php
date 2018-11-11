@@ -9,14 +9,25 @@ class PagesController extends Controller
     function home(){
         return view('pages.home');
     }
-    function home(){
+    function about(){
         return view('pages.about');
     }
-    function home(){
+    function contact(){
         return view('pages.contact');
     }
-    function home(){
+   function thankyou(){
         return view('pages.thankyou');
+    }
+    function store(Request $request)
+    {
+
+        $name = $request->name;
+
+        return redirect()->route('thanks', ['name' => $name]);
+    }
+    function thanks($name, Request $request) {
+        return view('pages.thankyou')->with(compact('name'));
+
     }
 }
 

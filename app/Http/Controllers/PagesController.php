@@ -15,13 +15,10 @@ class PagesController extends Controller
     function contact(){
         return view('pages.contact');
     }
-   function thankyou(){
-        return view('pages.thankyou');
-    }
-    function store(Request $request)
-    {
+    function store(Request $request) {
 
         $name = $request->name;
+        dd($request);
 
         return redirect()->route('thanks', ['name' => $name]);
     }
